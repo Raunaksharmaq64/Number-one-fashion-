@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number One Fashion Point | Premium Streetwear Bhopal</title>
+    <meta name="description" content="Explore Number One Fashion Point, Bhopal's premier streetwear destination. Shop limited edition cargos, varsity jackets, graphic tees, and luxury knitted polos. Fast delivery across India.">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Modern Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- GSAP for Smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div class="preloader" id="preloader">
+        <img src="assets/images/logo.jpg" alt="Loading..." class="preloader-logo">
+        <span class="preloader-text">Number One Fashion Point</span>
+        <div class="preloader-bar"><div class="preloader-bar-inner"></div></div>
+    </div>
+
+    <!-- ========== CUSTOM CURSOR ========== -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-circle"></div>
+        <span class="cursor-text">VIEW</span>
+    </div>
+
+    <!-- ========== ANNOUNCEMENT BAR ========== -->
+    <div class="announcement-bar">
+        <div class="announcement-ticker">
+            <span>⚡ LIMITED QUANTITY AVAILABLE • ORDER SOON ⚡</span>
+            <span>🇮🇳 FREE DELIVERY ACROSS INDIA 🇮🇳</span>
+            <span>💬 INSTANT ORDER VIA WHATSAPP 💬</span>
+            <span>📍 VISIT STORE: ASHOKA GARDEN, BHOPAL 📍</span>
+            <span>⚡ LIMITED QUANTITY AVAILABLE • ORDER SOON ⚡</span>
+            <span>🇮🇳 FREE DELIVERY ACROSS INDIA 🇮🇳</span>
+            <span>💬 INSTANT ORDER VIA WHATSAPP 💬</span>
+            <span>📍 VISIT STORE: ASHOKA GARDEN, BHOPAL 📍</span>
+        </div>
+    </div>
+
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header class="header" id="mainHeader">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <img src="assets/images/logo.jpg" alt="Number One Fashion Point Logo" class="brand-logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">NUMBER ONE</span>
+                    <span class="logo-subtitle">FASHION POINT</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#shop" class="nav-link">Shop Collection</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#location" class="nav-link">Find Store</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://whatsapp.com/channel/0029VbCrZBJ4Y9lhUnA4VZ2M" target="_blank" class="action-btn social-link-nav" aria-label="Join WhatsApp Channel" title="WhatsApp Channel">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/UYwgkk3EVrD5QCnJ7" target="_blank" class="action-btn social-link-nav" aria-label="Google Maps Location" title="Store Location">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+                <button class="action-btn cart-toggle-btn" aria-label="Open Shopping Cart" id="cartToggle">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <!-- Mobile Hamburger -->
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-tagline-wrap">
+                    <span class="hero-tagline">BHOPAL'S URBAN STYLE ARCHIVE</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="reveal-text"><span>ELEVATED</span></span>
+                    <span class="reveal-text highlight-color"><span>STREETWEAR</span></span>
+                </h1>
+                <p class="hero-desc">
+                    Branded aesthetics, premium heavyweight fabrics, and curated drops. Delivered right to your doorstep anywhere in India.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#shop" class="btn btn-primary magnetic-btn">SHOP COLLECTION <i class="fas fa-arrow-right"></i></a>
+                    <a href="#location" class="btn btn-secondary magnetic-btn">VISIT STORE</a>
+                </div>
+            </div>
+
+            <!-- Floating Card -->
+            <div class="hero-highlight-card">
+                <div class="card-inner">
+                    <span class="card-tag">NEW SEASON</span>
+                    <h4>Heavy Drop</h4>
+                    <p>Sizes M to XXL available. Exclusive premium fabrics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== USP / WHY US SECTION ========== -->
+        <section class="usp-section" id="about">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-tag">WHY SHOP WITH US</span>
+                    <h2 class="section-title">THE NO.1 STANDARD</h2>
+                </div>
+                
+                <div class="usp-grid">
+                    <div class="usp-card">
+                        <div class="usp-icon-wrap">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h3>Pan-India Delivery</h3>
+                        <p>Available across India. Safe packaging and trackable shipping directly to your city 🇮🇳</p>
+                    </div>
+                    
+                    <div class="usp-card">
+                        <div class="usp-icon-wrap">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp Checkout</h3>
+                        <p>No complex signup. Browse products, add to cart, and checkout instantly with the owners on WhatsApp.</p>
+                    </div>
+                    
+                    <div class="usp-card">
+                        <div class="usp-icon-wrap">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>Limited Quantities</h3>
+                        <p>We source only high-demand premium products in limited sizes (M to XXL). Grab yours before it's gone!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SHOP / CATALOG SECTION ========== -->
+        <section class="shop-section" id="shop">
+            <div class="container">
+                <div class="shop-header-flex">
+                    <div>
+                        <span class="section-tag">CURATED ARCHIVES</span>
+                        <h2 class="section-title">BROWSE COLLECTION</h2>
+                    </div>
+                    <div class="catalog-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="cargo-denim">Cargo & Denim</button>
+                        <button class="filter-btn" data-filter="utility-jackets">Utility & Jackets</button>
+                        <button class="filter-btn" data-filter="tees-polos">Tees & Polos</button>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products rendered dynamically by main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS SECTION ========== -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header align-center">
+                    <span class="section-tag">WHAT CUSTOMERS SAY</span>
+                    <h2 class="section-title">TRUSTED BY FASHION LOVERS</h2>
+                </div>
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== NEWSLETTER SECTION ========== -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-wrapper">
+                    <div class="newsletter-text">
+                        <h3>Get Early Access to Drops</h3>
+                        <p>Join our VIP list and be the first to know about exclusive limited drops, new arrivals, and special deals.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required id="newsletterEmail">
+                        <button type="submit" class="newsletter-submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== LOCATION / STORE SECTION ========== -->
+        <section class="location-section" id="location">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="location-info-panel">
+                        <span class="section-tag">VISIT OUR OFFLINE OUTLET</span>
+                        <h2 class="section-title">THE FLAGSHIP STORE</h2>
+                        
+                        <div class="store-details-list">
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <div class="detail-text">
+                                    <strong>Store Address</strong>
+                                    <p>Ashoka Garden, 80ft Road, Near Sangam Tant House, In Front of Wine Shop, Bhopal, Madhya Pradesh 462023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fas fa-shipping-fast"></i></div>
+                                <div class="detail-text">
+                                    <strong>Delivery Area</strong>
+                                    <p>Available across India 🇮🇳</p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="detail-text">
+                                    <strong>Enquiries & Ordering</strong>
+                                    <p>
+                                        <a href="tel:7440415040" class="tel-link">7440415040</a> / 
+                                        <a href="tel:7974199259" class="tel-link">7974199259</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fas fa-user-friends"></i></div>
+                                <div class="detail-text">
+                                    <strong>Owned by the Dynamic Duo</strong>
+                                    <p class="instagram-owners">
+                                        <a href="https://www.instagram.com/_mr_vihan_sharma/" target="_blank" class="ig-link"><i class="fab fa-instagram"></i> @_mr_vihan_sharma</a>
+                                        <a href="https://www.instagram.com/_amansharma01_/" target="_blank" class="ig-link"><i class="fab fa-instagram"></i> @_amansharma01_</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="store-actions">
+                            <a href="https://maps.app.goo.gl/UYwgkk3EVrD5QCnJ7" target="_blank" class="btn btn-primary magnetic-btn">
+                                <i class="fas fa-navigation"></i> OPEN IN GOOGLE MAPS
+                            </a>
+                            <a href="https://whatsapp.com/channel/0029VbCrZBJ4Y9lhUnA4VZ2M" target="_blank" class="btn btn-secondary magnetic-btn">
+                                <i class="fab fa-whatsapp"></i> JOIN WHATSAPP
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map-iframe-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.940428591873!2d77.439818!3d23.2452286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42751f7bb9e5%3A0xc39f8f411ba7565c!2sSangam%20Tent%20House!5e0!3m2!1sen!2sin!4v1716538902000!5m2!1sen!2sin" 
+                            width="100%" height="100%" 
+                            style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Number One Fashion Point Location Map"
+                            class="google-map-iframe">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== CART DRAWER ========== -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <h3>Your Shopping Bag (<span id="cartCountHeader">0</span>)</h3>
+            <button class="cart-close-btn" id="cartClose" aria-label="Close Shopping Cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-drawer-body">
+            <div class="empty-cart-message" id="emptyCartView">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your bag is empty.</p>
+                <a href="#shop" class="btn btn-primary" id="continueShopping">SHOP COLLECTION</a>
+            </div>
+            <div class="cart-items-list" id="cartItemsList"></div>
+            <div class="cart-checkout-section" id="cartCheckoutSection" style="display: none;">
+                <div class="cart-summary-total">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal" class="price-val">₹0</span>
+                </div>
+                <form id="checkoutForm" class="checkout-form">
+                    <h4 class="form-title">Delivery Details (India Only 🇮🇳)</h4>
+                    <div class="form-group">
+                        <label for="custName">Your Full Name *</label>
+                        <input type="text" id="custName" required placeholder="e.g. Rahul Verma">
+                    </div>
+                    <div class="form-group">
+                        <label for="custPhone">WhatsApp Number *</label>
+                        <input type="tel" id="custPhone" required placeholder="e.g. 9876543210">
+                    </div>
+                    <div class="form-group">
+                        <label for="custAddress">Full Address (with Pincode) *</label>
+                        <textarea id="custAddress" rows="3" required placeholder="House No, Street Name, Near Landmark, Bhopal, MP - 462023"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block checkout-submit-btn">
+                        <i class="fab fa-whatsapp"></i> PLACE ORDER VIA WHATSAPP
+                    </button>
+                </form>
+                <p class="delivery-notice-text">
+                    * Placing order redirects you to the store owner's WhatsApp window with prefilled details. Standard delivery takes 3-5 days.
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ========== PRODUCT QUICK VIEW MODAL ========== -->
+    <div class="modal-overlay" id="productModal" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close Details Modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content-grid" id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.jpg" alt="Logo" class="footer-logo">
+                    <h3>NUMBER ONE FASHION POINT</h3>
+                    <p class="footer-tagline">Style that speaks, quality that stands out. Bhopal's finest streetwear hub for the fashion-forward generation.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#shop">Shop Collection</a></li>
+                        <li><a href="#about">About Brand</a></li>
+                        <li><a href="#testimonials">Customer Reviews</a></li>
+                        <li><a href="#location">Find Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-socials">
+                    <h4>Join the Community</h4>
+                    <p>Follow our creators and join our VIP channel for first access to drops.</p>
+                    <div class="social-icons-row">
+                        <a href="https://www.instagram.com/_mr_vihan_sharma/" target="_blank" class="social-icon-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/_amansharma01_/" target="_blank" class="social-icon-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbCrZBJ4Y9lhUnA4VZ2M" target="_blank" class="social-icon-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Direct Contact</h4>
+                    <p><i class="fas fa-phone-alt"></i> 7440415040, 7974199259</p>
+                    <p><i class="fas fa-envelope"></i> contact@numberonefashion.com</p>
+                    <p><i class="fas fa-clock"></i> Open Daily: 11:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Number One Fashion Point. All Rights Reserved. Crafted for premium experiences.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+    <a href="https://wa.me/917440415040" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== BACK TO TOP BUTTON ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

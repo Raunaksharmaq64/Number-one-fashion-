@@ -294,15 +294,16 @@ body.hover-interactive .cursor-text { display: block; color: var(--accent-coral)
         padding-top: 80px; /* Leave space to clear the sticky header and close button */
         border-left: none;
         transform: translate3d(100%, 0, 0);
+        visibility: hidden;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         will-change: transform;
-        transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+        transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.45s cubic-bezier(0.25, 1, 0.5, 1);
         z-index: 1005;
         box-shadow: -10px 0 40px rgba(0,0,0,0.3);
         overflow-y: auto;
     }
-    .nav-menu.active { transform: translate3d(0, 0, 0); }
+    .nav-menu.active { transform: translate3d(0, 0, 0); visibility: visible; }
     
     /* Mobile menu header area */
     .nav-menu::before {
@@ -407,7 +408,7 @@ body.hover-interactive .cursor-text { display: block; color: var(--accent-coral)
     font-family: var(--font-heading);
     border-radius: var(--radius-full);
     position: relative; overflow: hidden; z-index: 1;
-    transition: var(--transition-smooth);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid transparent;
 }
 .btn::before {
@@ -540,7 +541,7 @@ body.hover-interactive .cursor-text { display: block; color: var(--accent-coral)
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     transform: rotate(3deg);
-    transition: var(--transition-smooth);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .hero-highlight-card:hover {
     transform: rotate(0deg) translateY(-10px);
@@ -604,7 +605,7 @@ body.hover-interactive .cursor-text { display: block; color: var(--accent-coral)
     border: 1px solid var(--border-light);
     padding: 40px 35px;
     border-radius: var(--radius-lg);
-    transition: var(--transition-smooth);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.4s ease;
     position: relative; overflow: hidden;
 }
 .usp-card::before {
@@ -861,7 +862,7 @@ body.hover-interactive .cursor-text { display: block; color: var(--accent-coral)
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: var(--radius-lg);
     padding: 32px; scroll-snap-align: start;
-    transition: var(--transition-smooth);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.4s ease, background-color 0.4s ease;
     backdrop-filter: blur(12px);
     position: relative;
 }
@@ -1084,12 +1085,13 @@ body.hover-interactive .cursor-text { display: block; color: var(--accent-coral)
     border-left: 1px solid var(--border-light);
     z-index: 1001;
     transform: translate3d(100%, 0, 0);
-    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+    visibility: hidden;
+    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.45s cubic-bezier(0.25, 1, 0.5, 1);
     display: flex; flex-direction: column;
     border-radius: var(--radius-xl) 0 0 var(--radius-xl);
     box-shadow: var(--shadow-lg);
 }
-.cart-drawer.active { transform: translate3d(0, 0, 0); }
+.cart-drawer.active { transform: translate3d(0, 0, 0); visibility: visible; }
 
 .cart-drawer-header {
     padding: 28px 30px;
